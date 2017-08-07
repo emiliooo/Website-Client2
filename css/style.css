@@ -1,3 +1,19 @@
+@font-face {
+    font-family: raleway_heavy;
+    src: url('../fonts/raleway.heavy.ttf');
+}
+@font-face {
+    font-family: raleway_light;
+    src: url('../fonts/Raleway-Light.ttf');
+}
+@font-face {
+    font-family: raleway_bold;
+    src: url('../fonts/Raleway-Bold.ttf');
+}
+
+
+
+
 body
 {
     margin: 0;
@@ -73,9 +89,11 @@ body
 }
 #section1 .section1_left h1{
     font-size:60pt;
+    font-family: raleway_heavy;
 }
 #section1 .section1_left p{
     font-size:15pt;
+    font-family: raleway_light;
 }
 #section1 .section1_left button{
     margin-top: 50px;
@@ -138,6 +156,12 @@ body
 
     align-items: center;
 }
+#section3 .row ul li a{
+    color:black;
+    text-decoration: none;
+    font-family: raleway_bold;
+}
+
 
 #section3 ul li
 {
@@ -294,11 +318,13 @@ body
 {
     font-size: 90pt;
     color:white;
+    font-family: raleway_heavy;
 }
 #section2 h1 
 {
     font-size: 50pt;
     color:white;
+    
 }
 #section6 .container .row p,
 #section2 p,
@@ -329,9 +355,11 @@ body
 }
 #section7 h1{
     font-size:54pt;
+    font-family: raleway_heavy;
 }
 #section7 .text-center p{
     font-size:15pt;
+    font-family: raleway_light;
 }
 .textarea {
     background-color: rgba(0,196,196,0.2);
@@ -357,15 +385,32 @@ input[type="text"],
 }
 #section8 p{
     color:white;
+    font-family: raleway_light;
 }
 .img-center {
     margin:0 auto;
 }
-
 .expand{
     display: flex;
 }
+ .navbar_top{
+    background-color: #f9f8fb;
+    width: 100%;
+    height: 105px;
+    z-index: 999;
+} 
+.added{
+    background-color: white;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    left: 16px;
+    border-bottom: 1px solid black;
+}
 
+.menu ul li{
+    font-family: raleway_bold;
+}
 
 /* /////////////////////////////////////////////////////////////////// */
 
@@ -384,6 +429,7 @@ input[type="text"],
    }
    .menu ul{
        background: #f9f8fb;
+       
    }
 
    .hamburger_menu{
@@ -402,6 +448,7 @@ input[type="text"],
    #section2 h1 
     {
         font-size: 20pt;
+        font-family: raleway_heavy;
     }
     #section6 .container .row p,
     #section2 p,
@@ -412,7 +459,7 @@ input[type="text"],
     #section1 .section1_left h1,
     #section4 .row h1{
     font-size:20px;
-    font-weight: bold;
+    font-family: raleway_heavy;
     }
     #section1 .section1_left p{
         font-size:19px;
@@ -424,6 +471,20 @@ input[type="text"],
     .icon_five
     {
         display: none;
+    }
+    #section8 .container {
+    background-color: #262626;
+    width: 100%;
+    height: 230px;
+    }
+}
+
+@media screen and (max-width:992px){
+    #section6
+    {
+    width: 100%;
+    height: 1400px;
+    background-color: #b07cf7;
     }
 }
 
@@ -453,6 +514,11 @@ input[type="text"],
             position: absolute;
             color: white;
     }
+    #section8 .row{
+    display: flex;
+    height: 90px;
+    align-items: center;
+    }
 }
 @media screen and (max-width:1200px)
 {
@@ -462,12 +528,7 @@ input[type="text"],
     height: 2575px;
     background-color: #ffe92f;
     }
-    #section6
-    {
-    width: 100%;
-    height: 1400px;
-    background-color: #b07cf7;
-    }
+
 }
 @media screen and (min-width:1200px)
 {

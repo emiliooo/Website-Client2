@@ -1,7 +1,6 @@
 $( document ).ready(function() {
 
 	$( ".hamburger" ).click(function() {
-
 	if(  $(".menu").hasClass("expand") ) {
 		$(".menu").hide(500);
 		$('.menu').removeClass('expand')
@@ -10,11 +9,55 @@ $( document ).ready(function() {
 		$('.menu').addClass('expand')
 	}
 	});
+
+	$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > 100) {
+		$('.add_menu').addClass('added');
+    } else {
+        $('.add_menu').removeClass('added');
+    }
+	});
+
+		$("#onet").click(function() {
+			$('html, body').animate({
+		scrollTop: $("#section1").offset().top
+			}, 2000);
+		});
+
+		$("#twot").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#section2").offset().top
+		}, 2000);
+	});
+
+		$("#three").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#section3").offset().top - 20 
+		}, 2000);
+	});
+
+		$("#five").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#section4").offset().top - 100
+		}, 2000);
+	});
+		$("#six").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#section6").offset().top
+		}, 2000);
+	});
+		$("#seven").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#section7").offset().top -100
+		}, 2000);
+	});
+
+
 });
 
 
-var myVar;
 
+var myVar;
  function myFunction(){
  		  myVar = setTimeout(alertFunc, 1000);
  		  document.getElementById("section4").style.height = "1864px";
