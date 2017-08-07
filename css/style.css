@@ -185,7 +185,7 @@ body
 
     width: 100px;
     height: 100px;
-    margin-left: 201px;
+    margin-left: 191px;
     padding: -10px;
 
     background-color: white;
@@ -203,7 +203,7 @@ body
 
     width: 100px;
     height: 100px;
-    margin-left: 201px;
+    margin-left: 191px;
     padding: -10px;
 
     background-color: white;
@@ -221,7 +221,7 @@ body
 
     width: 100px;
     height: 100px;
-    margin-left: 201px;
+    margin-left: 191px;
     padding: -10px;
 
     background-color: white;
@@ -239,7 +239,7 @@ body
 
     width: 100px;
     height: 100px;
-    margin-left: 201px;
+    margin-left: 191px;
     padding: -10px;
 
     background-color: white;
@@ -278,11 +278,14 @@ body
 	background-color: transparent;
 }
 #section4 button{
-
 	margin-top: 50px;
-	max-width: 200px;
-	height:60px;
-	background:#5585a2; 
+    width: 228px;
+    height: 60px;
+    background: #5585a2;
+    color: white;
+    font-family: raleway_light;
+    font-size: 20px; 
+    color: white;
 }
 #section5
 {
@@ -303,6 +306,7 @@ body
     max-width:170px;
     height: 50px;
     background: #96b92c;
+    color: white;
 }
 #section6 .container 
 {
@@ -322,8 +326,9 @@ body
 }
 #section2 h1 
 {
-    font-size: 50pt;
+    font-size: 46pt;
     color:white;
+    font-family: raleway_heavy;
     
 }
 #section6 .container .row p,
@@ -332,6 +337,18 @@ body
 {
     color:white;
     font-size: 17pt;
+    font-family: raleway_light;
+}
+#section2 p{
+    color:white;
+    font-size: 12pt;
+    font-family: raleway_light;
+}
+#section5 p
+{
+    color:black;
+    font-size: 17pt;
+    font-family: raleway_light;
 }
 #section6 .container .row button{
     margin-top: 50px;
@@ -368,9 +385,10 @@ body
 }
 #section7 .form_right{
     margin:20px 0px;
+    font-family: raleway_light;
 }
 .form_right p:nth-child(2n+1){
-    font-weight: bold;
+    font-family: raleway_bold;
 }
 input[type="text"],
 .textarea{
