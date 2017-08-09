@@ -49,14 +49,15 @@ body
     transform: translateY(25px);
     transition: 0.5s transform linear;
 }
-.hamburger:focus{
+
+/* .hamburger:focus{
     transform: rotate(45deg) translateY(5px);
     border:0;
 
-}
-.hamburger:focus::after{
+} */
+/* .hamburger:focus::after{
     transform: rotate(-90deg) translateX(-10px);
-}
+} */
 
 #section1 ul
 {
