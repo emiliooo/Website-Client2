@@ -12,8 +12,6 @@
 }
 
 
-
-
 body
 {
     margin: 0;
@@ -59,8 +57,6 @@ body
 .hamburger:focus::after{
     transform: rotate(-90deg) translateX(-10px);
 }
-
-
 
 #section1 ul
 {
@@ -289,7 +285,6 @@ body
 }
 #section5
 {
-   
     width: 100%;
     height: 500px;
     background-color: #ffffff;
@@ -298,21 +293,21 @@ body
 
 }
 #section5 input{
-    
     height: 50px;
-
 }
 #section5 button{
-    max-width:170px;
+    width: 166px;
+    position: absolute;
     height: 50px;
     background: #96b92c;
     color: white;
+    z-index: 9995;
 }
 #section6 .container 
 {
    
     width: 100%;
-    height: 864px;
+    height: 750px;
 
     background-color: #b07cf7;
 
@@ -323,6 +318,7 @@ body
     font-size: 90pt;
     color:white;
     font-family: raleway_heavy;
+    text-align: center;
 }
 #section2 h1 
 {
@@ -369,6 +365,8 @@ body
     height: 50px;
     background-color: rgba(0,196,196,0.2);
     margin: 20px 0px;
+    border-radius: 0px;
+    outline-style:none;
 }
 #section7 h1{
     font-size:54pt;
@@ -400,13 +398,18 @@ input[type="text"],
     background-color: #262626;
     width: 100%;
     height: 90px;
+    font-size: 15pt;
 }
 #section8 p{
     color:white;
     font-family: raleway_light;
 }
+#section8 span{
+    color:#ff2b58;
+}
 .img-center {
     margin:0 auto;
+    text-align: center;
 }
 .expand{
     display: flex;
@@ -425,10 +428,74 @@ input[type="text"],
     left: 16px;
     border-bottom: 1px solid black;
 }
-
 .menu ul li{
     font-family: raleway_bold;
 }
+#section7 .row ::-webkit-input-placeholder{
+    color:white;
+}
+#section7 .row input:focus{
+    border-left:5px solid #355b82;
+}
+#section7 .row textarea:focus{
+    border-left:5px solid #355b82;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.date_img_one {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
+    z-index: 999;
+    font-size: 27px;
+    text-align: center;
+    top: 48px;
+    left: 64px;
+}
+
+.img_box_one{
+  position: relative;
+}
+.text_img_one {
+       left: 28px;
+    top: 216px;
+    font-size: 16pt;
+    position: absolute;
+    color: white;
+}
+.fle{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.text_under_img_one {
+    top: 295px;
+    left: 33px;
+    position: absolute;
+    color: white;
+}
+.month_img_one {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border-radius: 10px;
+    color: white;
+    z-index: 999;
+    font-size: 27px;
+    text-align: center;
+    top: 75px;
+    left: 64px;
+}
+
+
+
+
+
 
 /* /////////////////////////////////////////////////////////////////// */
 
@@ -438,7 +505,6 @@ input[type="text"],
         display: block;
     }
     .menu{
-
         display: none;
         flex-direction: column;
         position: absolute;
@@ -446,10 +512,8 @@ input[type="text"],
         margin: 120px 0px;
    }
    .menu ul{
-       background: #f9f8fb;
-       
+       background: #f9f8fb;   
    }
-
    .hamburger_menu{
            display: flex;
     justify-content: flex-end;
@@ -481,6 +545,7 @@ input[type="text"],
     }
     #section1 .section1_left p{
         font-size:19px;
+        font-family: raleway_light;
     }
 
     .icon_one,
@@ -515,19 +580,19 @@ input[type="text"],
 {
     #section2 .row ,
     #section3 .row ,
-     .flex ,
-     #section5 .row,
-     #section6 .container
+     .flex,
+     #section5 .row
     {
-        display: flex;
+         display: flex;
 
-        align-items: center;
+        align-items: center; 
     }
       #section3 p
     {
             font-size: 40px;
             position: absolute;
             color: white;
+            font-family: raleway_light;
     }
 }
 @media screen and (min-width:992px) {
@@ -536,6 +601,7 @@ input[type="text"],
             font-size: 80px;
             position: absolute;
             color: white;
+            font-family: raleway_light;
     }
     #section8 .row{
     display: flex;
@@ -550,6 +616,7 @@ input[type="text"],
     width: 100%;
     height: 2575px;
     background-color: #ffe92f;
+    text-align: center;
     }
 
 }
@@ -566,3 +633,4 @@ input[type="text"],
    
         
 }
+

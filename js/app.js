@@ -43,12 +43,12 @@ $( document ).ready(function() {
 	});
 		$("#six").click(function() {
 		$('html, body').animate({
-			scrollTop: $("#section6").offset().top
+			scrollTop: $("#section6").offset().top - 40
 		}, 2000);
 	});
 		$("#seven").click(function() {
 		$('html, body').animate({
-			scrollTop: $("#section7").offset().top -100
+			scrollTop: $("#section7").offset().top -140
 		}, 2000);
 	});
 
